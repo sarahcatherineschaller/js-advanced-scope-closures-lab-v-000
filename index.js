@@ -1,12 +1,11 @@
 function produceDrivingRange(blockRange) {
   return function(startBlock, endBlock) {
-    let actualRange = parseInt(endBlock) - parseInt(startBlock);
+    let actualRange = parseInt(endBlock) - parseInt(startBlock)
+    let rangeDifference = actualRange - blockRange
 
     if (actualRange > blockRange) {
-      let rangeDifference = actualRange - blockRange
       return `${rangeDifference} blocks out of range`
     } else {
-      let rangeDifference = actualRange - blockRange
       return `within range by ${rangeDifference}`
     }
     }
