@@ -1,7 +1,6 @@
 function produceDrivingRange(blockRange) {
   return function(startBlock, endBlock) {
     let actualRange = parseInt(endBlock) - parseInt(startBlock)
-    binding.pry
     let rangeDifference = actualRange - blockRange
 
     if (actualRange > blockRange) {
